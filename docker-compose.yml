@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  mlnhiicc:
+    image: mlnhiicc
+    build: .
+    volumes:
+      - "/run/pcscd:/var/run/pcscd"
+    ports:
+      - "127.0.0.1:7777:7777"
+      - "127.0.0.1:61161:61161"
